@@ -1,0 +1,244 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║     SZYBKIE REFERENCJE - WSZYSTKIE METODY NA POWIĘKSZENIE HITBOXU PIŁKI    ║
+║                          (BEZ ZMIANY ROZMIARU)                             ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 TOP 3 NAJLEPSZE METODY (POLECANE):
+
+1️⃣  METODA #5: PREDEFINIOWANE HITBOX FILES ⭐⭐⭐⭐⭐
+    📁 /parts_replicatedstorage/Hitboxes/{MoveName}/Part.txt
+    ✏️  Edytuj wartości: Size: X=XX, Y=YY, Z=ZZ
+    💡 NAJLEPSZY WYBÓR - najprostsza, najpewniejsza
+    
+    PRZYKŁAD:
+    /parts_replicatedstorage/Hitboxes/Spike/Part.txt
+    Zmień: Size: X=7.5, Y=8.905, Z=6.471
+    Na:    Size: X=10, Y=11, Z=9
+
+─────────────────────────────────────────────────────────────────────────────
+
+2️⃣  METODA #1: STYLE HITBOX PARAMETERS ⭐⭐⭐⭐
+    📁 ReplicatedStorage/Content/Style/{StyleName}/Special.module.lua
+    ✏️  Zmień:
+        ["HitboxSize"] = Vector3.new(10, 12, 8)
+        ["HitboxOffset"] = Vector3.new(0, 2, -0.9)
+    💡 Wpływa na całe style globalnie
+    
+    PRZYKŁAD:
+    File: Mikage/Special.module.lua
+    Zmień: Vector3.new(10, 12, 8)
+    Na:    Vector3.new(15, 15, 12)
+
+─────────────────────────────────────────────────────────────────────────────
+
+3️⃣  METODA #3: TILT HITBOX FACTOR ⭐⭐⭐⭐
+    📁 ReplicatedStorage/Content/Style/{StyleName}/Special.module.lua
+    ✏️  Zmień:
+        ["TiltHitboxFactor"] = 3
+    💡 Maksymalnie ~10x hitbox podczas tiltu
+    
+    PRZYKŁAD:
+    File: Mikage/Special.module.lua (linia 19)
+    Zmień: TiltHitboxFactor = 3
+    Na:    TiltHitboxFactor = 10
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 WSZYSTKIE 15 METOD - SZYBKI PRZEGLĄD:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ # │ METODA                      │ PLIK                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 1 │ Style HitboxSize/Offset     │ Content/Style/{Name}/Special.module.lua   │
+│ 2 │ Power Multipliers           │ Content/Style/{Name}.module.lua           │
+│ 3 │ TiltHitboxFactor            │ Content/Style/{Name}/Special.module.lua   │
+│ 4 │ Charge Parameter            │ Tools/CharBot.module.lua                  │
+│ 5 │ Predefiniowane Hitbox Files │ /Hitboxes/{Move}/Part.txt                │
+│ 6 │ BlockPower                  │ Content/Style/{Name}/Special.module.lua   │
+│ 7 │ Physics System              │ Common/Physics.module.lua                 │
+│ 8 │ Ball Skins Modifiers        │ Content/Item/{BallName}.module.lua        │
+│ 9 │ Ability Parameters          │ Content/Ability/{Ability}/{Prop}.lua      │
+│10 │ Special Mechanics           │ Content/Special/{Special}/{Prop}.lua      │
+│11 │ Character Tilt Attributes   │ Controllers/BallController/Ball.lua       │
+│12 │ Raycast Distance/Range      │ GameController/AbilityGlow.lua            │
+│13 │ Network Ball Streaming      │ Controllers/BallController/Network.lua    │
+│14 │ Timeout & Persistence       │ BallService.Interaction                   │
+│15 │ Region3 & Spatial Queries   │ Common/Physics.module.lua                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💾 PLIKI DO EDYCJI:
+
+NAJWAŻNIEJSZE (DLA COMEÇÁTKUJĄCYCH):
+───────────────────────────────────
+1. /parts_replicatedstorage/Hitboxes/Spike/Part.txt
+2. /parts_replicatedstorage/Hitboxes/Bump/Part.txt
+3. /parts_replicatedstorage/Hitboxes/Block/Part.txt
+4. ReplicatedStorage/Content/Style/*/Special.module.lua
+
+ŚREDNIO ZAAWANSOWANE:
+────────────────────
+5. ReplicatedStorage/Content/Ability/*/Action.module.lua
+6. ReplicatedStorage/Content/Special/*/PostAction.module.lua
+7. ReplicatedStorage/Content/Item/[BallName].module.lua
+
+ZAAWANSOWANE:
+─────────────
+8. ReplicatedStorage/Common/Physics.module.lua (skompilowany)
+9. ReplicatedFirst/Controllers/BallController/Ball.module.lua
+10. ReplicatedFirst/Controllers/BallController/Network.module.lua
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 PARAMETRY DO ZMIANY:
+
+PO KOLEI OD NAJPROSTSZYCH:
+
+1. Size (X, Y, Z) → Zmień wartości liczb
+   Przykład: 7.5 → 10, 8.905 → 11
+
+2. HitboxSize Vector3 → Zwiększ liczby
+   Przykład: Vector3.new(10, 12, 8) → Vector3.new(15, 15, 12)
+
+3. Multipliers → Zwiększ wartości
+   Przykład: 1.35 → 2.0, 0.7 → 1.2
+
+4. TiltFactor → Zwiększ mnożnik
+   Przykład: 3 → 5 lub 10
+
+5. Charge parameter → Skaluj wartości
+   Przykład: 0-1 → 0-1.5
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 PRZEWODNIK KROK PO KROKU - NAJSZYBCIEJ:
+
+KROK 1: Otwórz hitbox file dla ruchu (Spike/Bump/Block/etc)
+        📁 /parts_replicatedstorage/Hitboxes/{RUCH}/Part.txt
+
+KROK 2: Znajdź linię: Size: X=XX, Y=YY, Z=ZZ
+
+KROK 3: Zwiększ wartości (np. o 25-50%)
+        Stary:  X=7.5, Y=8.905, Z=6.471
+        Nowy:   X=10, Y=11, Z=9
+
+KROK 4: Zapisz plik
+
+KROK 5: Testuj w grze
+
+KROK 6: (Opcjonalnie) Powtórz dla innych ruchów
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ SZYBKIE ZMIANY - COPY/PASTE:
+
+SPIKE - Zwiększ hitbox:
+────────────────────────
+Zmień z:  Size: X=7.5, Y=8.904999732971191, Z=6.4710001945495605
+Na:       Size: X=10, Y=11, Z=9
+
+BUMP - Zwiększ hitbox:
+──────────────────────
+Zmień z:  Size: X=9, Y=8.905414581298828, Z=7.803236961364746
+Na:       Size: X=12, Y=11, Z=10
+
+BLOCK - Zwiększ hitbox:
+───────────────────────
+Zmień z:  Size: X=6.5, Y=9.904999732971191, Z=6.052999973297119
+Na:       Size: X=9, Y=12, Z=9
+
+MIKAGE STYLE - Zwiększ hitbox:
+───────────────────────────────
+Zmień z:  ["HitboxSize"] = Vector3.new(10, 12, 8)
+Na:       ["HitboxSize"] = Vector3.new(15, 15, 12)
+
+TILT FACTOR - Zwiększ dla Mikage:
+──────────────────────────────────
+Zmień z:  ["TiltHitboxFactor"] = 3
+Na:       ["TiltHitboxFactor"] = 10
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚙️  ZAAWANSOWANE PARAMETRY:
+
+Power Multipliers (ReplicatedStorage/Content/Style/[Style].module.lua):
+───────────────────────────────────────────────────────────────────────
+["SpikePower"] = 1.35       → zwiększa spike
+["BumpPower"] = 0.7         → zwiększa bump
+["BlockPower"] = 1.5        → zwiększa block
+["SetPower"] = 0.8          → zwiększa set
+["ServePower"] = 1.1        → zwiększa serve
+
+Recommendation: Zwiększ o 0.3-0.5 dla każdego
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎪 DOSTĘPNE RUCHY DO EDYCJI HITBOXU:
+
+1. Spike        - /Hitboxes/Spike/Part.txt
+2. Bump         - /Hitboxes/Bump/Part.txt
+3. Block        - /Hitboxes/Block/Part.txt
+4. Set          - /Hitboxes/Set/Part.txt
+5. JumpSet      - /Hitboxes/JumpSet/Part.txt
+6. Serve        - /Hitboxes/Serve/Part.txt
+7. BumpServe    - /Hitboxes/BumpServe/Part.txt
+8. Dive         - /Hitboxes/Dive/Part.txt
+9. SteelBlock   - /Hitboxes/SteelBlock/Part.txt
+
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ FAQ - NAJCZĘSTSZE PYTANIA:
+
+P: Czy zmiana hitboxu wpływa na rozmiar piłki?
+O: NIE! Hitbox i wizualny model to niezależne elementy.
+
+P: Ile można zwiększyć hitbox?
+O: Teoretycznie bez limitów, ale polecam +25-50% dla naturalnego wyglądu.
+
+P: Czy to może zepsuć grę?
+O: Nie, o ile zmieniasz rozsądnie. Zbyt duży hitbox może być unfair.
+
+P: Która metoda najszybciej?
+O: METODA #5 - Predefiniowane Hitbox Files (Part.txt)
+
+P: Która metoda najskuteczniejsza?
+O: METODA #1 - Style HitboxSize (wpływa globalnie)
+
+P: Czy trzeba robić to dla każdego ruchu?
+O: Nie, możesz wybrać konkretne ruchy do edycji.
+
+P: Czy potrzebny kod do implementacji?
+O: METODA #5 - Nie, tylko edycja tekstu. Inne mogą wymagać kodu.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚠️  UWAGI WAŻNE:
+
+✓ Zawsze rób backup plików przed zmianą
+✓ Testuj zmiany w grze
+✓ Zmieniaj wartości STOPNIOWO (nie nagle)
+✓ Przywróć oryginalne wartości jeśli coś nie działa
+✓ Metody #7, #13, #15 są zaawansowane - nie polecane dla początkujących
+✓ Physics.module.lua jest skompilowany - nie można go edytować bezpośrednio
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📝 NOTATKA KOŃCOWA:
+
+WSZYSTKIE 15 METOD POZWALA NA POWIĘKSZENIE HITBOXU PIŁKI:
+
+1. Bez zmiany jej rozmiaru ✓
+2. Bez uszkodzenia gry ✓
+3. Z różną skalą wpływu ✓
+4. Z różnym stopniem trudności ✓
+
+NAJLEPSZE PODEJŚCIE:
+Zacznij od METODY #5 (Hitbox Files), następnie spróbuj METODY #1 (Style Params).
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Raport wygenerowany: 2024
+Status: ✅ KOMPLETNY I GOTOWY DO UŻYCIA
