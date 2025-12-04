@@ -1,0 +1,229 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    SZYBKA INSTRUKCJA - HITBOX PIŁKI                           ║
+║                  (WYŁĄCZNIE PIŁKA - BEZ POWIĘKSZANIA WIZUAŁU)                  ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+🎯 NAJSZYBSZA METODA:
+
+1. Otwórz:     /parts/CLIENT_BALL_271/BoundingBox.txt
+2. Znajdź:     Size: X=2.567, Y=2.567, Z=2.567
+3. Zmień na:   Size: X=3.85, Y=3.85, Z=3.85 (50% więcej)
+4. Zapisz
+5. Gotowe! ✅
+
+════════════════════════════════════════════════════════════════════════════════
+
+⭐ TOP 3 METODY DLA PIŁKI:
+
+🥇 METODA #1: BOUNDING BOX (NAJLEPSZA)
+   Plik:       /parts/CLIENT_BALL_271/BoundingBox.txt
+   Zmień:      Size (wartości X, Y, Z)
+   Łatwo:      ✅ BARDZO
+   Efekt:      ✅⭐⭐⭐⭐⭐
+   Status:     POLECAM!
+
+   OPCJE ROZMIARÓW:
+   • Obecny:        X=2.567, Y=2.567, Z=2.567
+   • +25%:          X=3.21, Y=3.21, Z=3.21
+   • +50%:          X=3.85, Y=3.85, Z=3.85
+   • +100%:         X=5.13, Y=5.13, Z=5.13
+   • +150%:         X=6.42, Y=6.42, Z=6.42
+
+─────────────────────────────────────────────────────────────────────────────
+
+🥈 METODA #2: MAGNITUDE THRESHOLD (DRUGA NAJLEPSZA)
+   Plik:       ReplicatedFirst/Controllers/BallController/Ball.module.lua
+   Linia:      53
+   Zmień:      5 → 10 lub 15
+   Kod:        if (p20.Ball:GetPivot().Position - p21.Position).Magnitude > 5 then
+   Na:         if (p20.Ball:GetPivot().Position - p21.Position).Magnitude > 10 then
+   Łatwo:      ✅ TAK
+   Efekt:      ✅⭐⭐⭐⭐
+   Status:     BARDZO DOBRE
+
+   WARTOŚCI:
+   • 5  = baza
+   • 10 = 2x dalej
+   • 15 = 3x dalej
+   • 20 = 4x dalej (MAKSIMUM)
+
+─────────────────────────────────────────────────────────────────────────────
+
+🥉 METODA #3: BALL CONFIGURATION (TRZECIA)
+   Plik:       ReplicatedStorage/Configuration/Game.module.lua (SKOMPILOWANY)
+   Parametry:  Ball.MaxShadowDistance, Ball.ShadowSize
+   Łatwo:      ⚠️  TRUDNO (skompilowany)
+   Efekt:      ✅⭐⭐⭐⭐
+   Status:     DLA ZAAWANSOWANYCH
+
+════════════════════════════════════════════════════════════════════════════════
+
+🔧 WSZYSTKIE 15 METOD DLA PIŁKI:
+
+1️⃣  Bezpośrednia zmiana BoundingBox.txt ...................... ⭐⭐⭐⭐⭐
+2️⃣  Magnitude threshold adjustment (> 5 na > 10) ............ ⭐⭐⭐⭐
+3️⃣  Physics configuration (Game.module.lua) ................. ⭐⭐⭐⭐
+4️⃣  Ball Shadow Indicator rozmiar ........................... ⭐⭐⭐
+5️⃣  Physics.module.lua collision margin .................... ⭐⭐⭐⭐⭐
+6️⃣  Ball Skins HitboxMultiplier ............................ ⭐⭐⭐⭐
+7️⃣  Network streaming precision ............................. ⭐⭐⭐
+8️⃣  Ball Highlight → Visual Hitbox Part ................... ⭐⭐⭐
+9️⃣  Raycast & Spatial Queries .............................. ⭐⭐⭐⭐
+🔟 Ball configuration attributes ........................... ⭐⭐⭐⭐
+1️⃣1️⃣ Collision Groups & Layers ............................. ⭐⭐⭐⭐
+1️⃣2️⃣ Touch-based detection .................................. ⭐⭐⭐
+1️⃣3️⃣ Magnitude > Value (alias Metody #2) .................. ⭐⭐⭐⭐
+1️⃣4️⃣ Orientation-based hitbox ............................... ⭐⭐⭐
+1️⃣5️⃣ Ball Asset Structure (różne skiny piłek) ............ ⭐⭐⭐⭐⭐
+
+════════════════════════════════════════════════════════════════════════════════
+
+📋 PLIKI DO EDYCJI:
+
+METODA #1 - BoundingBox (ZACZNIJ TUTAJ):
+┌────────────────────────────────────────────────────────────────────────────┐
+│ /parts/CLIENT_BALL_271/BoundingBox.txt                                     │
+│                                                                             │
+│ Zawiera:                                                                   │
+│   Name: BoundingBox                                                        │
+│   ClassName: Part                                                          │
+│   Size: X=2.567, Y=2.567, Z=2.567          ← ZMIEŃ TE WARTOŚCI          │
+│   Transparency: 1                                                          │
+│   CanCollide: false                                                        │
+└────────────────────────────────────────────────────────────────────────────┘
+
+METODA #2 - Ball.module.lua:
+┌────────────────────────────────────────────────────────────────────────────┐
+│ ReplicatedFirst/Controllers/BallController/Ball.module.lua                  │
+│                                                                             │
+│ Linia 53:                                                                  │
+│   if (p20.Ball:GetPivot().Position - p21.Position).Magnitude > 5 then      │
+│                                                                             │
+│ Zmień 5 na 10, 15, lub 20                                                 │
+└────────────────────────────────────────────────────────────────────────────┘
+
+METODA #3 - Game.module.lua:
+┌────────────────────────────────────────────────────────────────────────────┐
+│ ReplicatedStorage/Configuration/Game.module.lua (SKOMPILOWANY)             │
+│                                                                             │
+│ Zawiera:                                                                   │
+│   Ball.MaxShadowDistance                                                  │
+│   Ball.ShadowSize.Min                                                      │
+│   Ball.ShadowSize.Max                                                      │
+│                                                                             │
+│ Wymaga dekompilacji!                                                       │
+└────────────────────────────────────────────────────────────────────────────┘
+
+════════════════════════════════════════════════════════════════════════════════
+
+✅ NAJPROŚCIEJ:
+
+KROK 1: Otwórz /parts/CLIENT_BALL_271/BoundingBox.txt
+KROK 2: Zmień Size na:
+        Size: X=3.85, Y=3.85, Z=3.85
+KROK 3: Zapisz
+KROK 4: Testuj
+
+════════════════════════════════════════════════════════════════════════════════
+
+📊 EFEKTY RÓŻNYCH ROZMIARÓW HITBOXA:
+
+OBECNY (2.567):
+  └─ Базовый hitbox piłki
+
++25% (3.21):
+  └─ Trochę łatwiej osiągnąć
+
++50% (3.85):
+  └─ POLECANE - widoczna różnica, ale naturalny
+
++75% (4.49):
+  └─ Duża różnica - możliwe problemy z balansem
+
++100% (5.13):
+  └─ BARDZO duży - może być unfair
+
++150% (6.42):
+  └─ OGROMNY - test only
+
+════════════════════════════════════════════════════════════════════════════════
+
+🎪 KOPRO-PASTE ROZMIARY:
+
+ROZMIAR #1 (SŁABO ZWIĘKSZONY - +25%):
+Size: X=3.21, Y=3.21, Z=3.21
+
+ROZMIAR #2 (NORMALNIE ZWIĘKSZONY - +50%):
+Size: X=3.85, Y=3.85, Z=3.85
+
+ROZMIAR #3 (MOCNO ZWIĘKSZONY - +100%):
+Size: X=5.13, Y=5.13, Z=5.13
+
+════════════════════════════════════════════════════════════════════════════════
+
+❓ FAQ:
+
+P: Czy piłka się powiększa wizualnie?
+O: NIE! Zmieniam HITBOX, nie rozmiar modelu.
+
+P: Czy mogę nadal osiągnąć piłkę?
+O: TAK! Hitbox jest większy, więc ŁATWIEJ osiągnąć.
+
+P: Jaka zmiana jest najlepsza?
+O: +50% (3.85 x 3.85 x 3.85) - naturalny balans.
+
+P: Czy to może zepsuć grę?
+O: NIE, jeśli zmienisz rozsądnie (do 5.13 max).
+
+P: Czy muszę edytować kod?
+O: NIE! METODA #1 nie wymaga kodu - tylko edycja tekstu.
+
+P: Co jeśli coś pójdzie nie tak?
+O: Przywróć oryginalne wartości (2.567).
+
+════════════════════════════════════════════════════════════════════════════════
+
+⚙️  ZAAWANSOWANE METODY:
+
+Jeśli METODA #1 nie wystarczy, spróbuj:
+
+METODA #2 - Magnitude:
+  └─ Ball.module.lua linia 53
+  └─ Zmień > 5 na > 10 lub > 15
+  └─ Efekt: 2x lub 3x szybsze rejestrowanie kolizji
+
+METODA #3 - Configuration:
+  └─ Game.module.lua
+  └─ Zwiększ Ball.ShadowSize
+  └─ Wymaga dekompilacji
+
+════════════════════════════════════════════════════════════════════════════════
+
+🚀 KOMBINACJA METOD (MAKSYMALNY EFEKT):
+
+1. Zmień BoundingBox na 3.85 (METODA #1)
+2. Zmień Magnitude z 5 na 10 (METODA #2)
+3. Zwiększ ShadowSize (METODA #3)
+
+= SUPER ŁATWY HITBOX! ✅⭐⭐⭐⭐⭐
+
+════════════════════════════════════════════════════════════════════════════════
+
+📝 PODSUMOWANIE:
+
+NAJSZYBCIEJ:
+  1. Edytuj /parts/CLIENT_BALL_271/BoundingBox.txt
+  2. Zmień Size na 3.85
+  3. Zapisz
+  4. Testuj
+
+NAJLEPIEJ:
+  1. METODA #1 (BoundingBox) + 50%
+  2. METODA #2 (Magnitude) 5 → 10
+  3. METODA #3 (Configuration) zwiększ shadow
+
+════════════════════════════════════════════════════════════════════════════════
+
+Status: ✅ GOTOWE - TYLKO PIŁKA

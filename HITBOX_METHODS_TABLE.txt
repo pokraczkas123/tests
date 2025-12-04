@@ -1,0 +1,311 @@
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                    WSZYSTKIE METODY NA POWIĘKSZENIE HITBOXU PIŁKI - TABELA REFERENCYJNA                  ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #1: STYLE HITBOX PARAMETERS                                                                        │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Style/{StyleName}/Special.module.lua                              │
+│ PARAMETR:    HitboxSize = Vector3.new(10, 12, 8)                                                         │
+│              HitboxOffset = Vector3.new(0, 2, -0.9)                                                       │
+│ EFEKT:       Bezpośrednia zmiana rozmiaru hitboxu dla całego stylu                                        │
+│ IMPLEMENTACJA: Edytuj wartości Vector3                                                                   │
+│ PRZYKŁAD:    (10, 12, 8) → (15, 15, 12)                                                                  │
+│ STOPIEŃ TRUDNOŚCI: ⭐ ŁATWO                                                                              │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐⭐ GLOBALNY - wszystkie ruchy stylu                                                 │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #2: POWER MULTIPLIERS SYSTEMU STYLE'A                                                              │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Style/{StyleName}.module.lua                                      │
+│ PARAMETR:    SpikePower: 1.35         → zwiększa effectivność spika                                      │
+│              BumpPower: 0.7           → zwiększa effectivność bump'a                                      │
+│              BlockPower: 1.5          → zwiększa effectivność bloku                                       │
+│              SetPower: 0.8            → zwiększa effectivność set'u                                       │
+│              ServePower: 1.1          → zwiększa effectivność serve                                       │
+│              DiveSpeed: 0.93          → zwiększa prędkość dive                                            │
+│ EFEKT:       Większa moc = większy efektywny hitbox                                                       │
+│ IMPLEMENTACJA: Zwiększ wartości multiplierów                                                              │
+│ PRZYKŁAD:    SpikePower: 1.35 → 2.0 (wzrost 48%)                                                        │
+│ STOPIEŃ TRUDNOŚCI: ⭐ ŁATWO                                                                              │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - różne ruchy mogą mieć różne mnożniki                                      │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #3: TILT HITBOX FACTOR                                                                             │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Style/{StyleName}/Special.module.lua                              │
+│ PARAMETR:    TiltHitboxFactor = 3                                                                        │
+│ EFEKT:       Mnożnik hitboxu podczas tiltu gracza (zmiana pozycji głowy)                                 │
+│ IMPLEMENTACJA: Zwiększ wartość mnożnika                                                                  │
+│ PRZYKŁAD:    TiltHitboxFactor: 3 → 10 (hitbox 10x większy przy tilcie)                                  │
+│ STOPIEŃ TRUDNOŚCI: ⭐ ŁATWO                                                                              │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐ ŚREDNI - tylko podczas tiltu                                                       │
+│ MAKSYMALNA WARTOŚĆ: Teoretycznie bez limitu, ale ~10 to rozsądne maximum                                │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #4: CHARGE PARAMETER (InteractionService)                                                          │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Tools/CharBot.module.lua (linia 92-98)                                    │
+│ PARAMETR:    Charge: number (0-1)     → skaluje hitbox na podstawie naładowania                         │
+│ FUNKCJA:     BallService.Interaction.createHitbox(player, {                                              │
+│                  MoveId: string,                                                                         │
+│                  BallId: number,                                                                         │
+│                  Charge: number (0-1),  ← ZWIĘKSZA HITBOX                                               │
+│                  TiltDirection: Vector3                                                                  │
+│              })                                                                                           │
+│ EFEKT:       Hitbox skaluje się wraz z Charge value (0 = min, 1 = max)                                 │
+│ IMPLEMENTACJA: Zwiększ domyślną wartość Charge lub zmień skalowanie                                      │
+│ PRZYKŁAD:    Charge: 1.0 → 1.5 (jeśli system to akceptuje)                                             │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐ ŚREDNIO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - wpływa na wszystkie naładowane ruchy                                     │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #5: PREDEFINIOWANE HITBOX FILES                                                                    │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        /parts_replicatedstorage/Hitboxes/{MoveName}/Part.txt                                       │
+│ FORMAT:      Name: Part                                                                                   │
+│              ClassName: Part                                                                              │
+│              Position: X=X, Y=Y, Z=Z                                                                     │
+│              Size: X=W, Y=H, Z=D         ← ZWIĘKSZ TE WARTOŚCI                                          │
+│              Color: R=0, G=255, B=0                                                                      │
+│              Transparency: 0.5                                                                            │
+│              Anchored: false                                                                              │
+│              CanCollide: true                                                                             │
+│                                                                                                            │
+│ OBECNE ROZMIARY:                                                                                         │
+│   • SPIKE:    7.5 x 8.905 x 6.471     →  Zwiększ na:  10 x 11 x 9                                      │
+│   • BUMP:     9 x 8.905 x 7.803       →  Zwiększ na:  12 x 11 x 10                                     │
+│   • BLOCK:    6.5 x 9.905 x 6.053     →  Zwiększ na:  9 x 12 x 9                                       │
+│   • SET:      (edytuj)                →  Zwiększ na:  (dostosuj)                                        │
+│   • JUMPSET:  (edytuj)                →  Zwiększ na:  (dostosuj)                                        │
+│   • SERVE:    (edytuj)                →  Zwiększ na:  (dostosuj)                                        │
+│   • BUMPSERVE:(edytuj)                →  Zwiększ na:  (dostosuj)                                        │
+│   • DIVE:     (edytuj)                →  Zwiększ na:  (dostosuj)                                        │
+│   • STEELBLOCK:(edytuj)               →  Zwiększ na:  (dostosuj)                                        │
+│                                                                                                            │
+│ EFEKT:       Bezpośrednia zmiana fizycznego hitboxu dla każdego ruchu                                    │
+│ IMPLEMENTACJA: Edytuj wartości Size w każdym Part.txt                                                   │
+│ STOPIEŃ TRUDNOŚCI: ⭐ ŁATWO                                                                              │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐⭐ GLOBALNY - każdy ruch ma swój hitbox                                           │
+│ DOKŁADNOŚĆ:  Doskonała - dokładna kontrola nad każdym ruchem                                             │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #6: BLOCK POWER I GRAVITY FACTOR                                                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Style/{StyleName}/Special.module.lua                              │
+│ PARAMETR:    BlockPower: 2             → mnożnik mocy bloku                                              │
+│              BlockGravityFactor: 0.5   → wpływ grawitacji na blok                                        │
+│ EFEKT:       Zwiększenie efectivności bloku (większy hitbox defensywny)                                  │
+│ IMPLEMENTACJA: Zwiększ wartość BlockPower                                                                │
+│ PRZYKŁAD:    BlockPower: 2 → 3 (wzrost 50%)                                                             │
+│ STOPIEŃ TRUDNOŚCI: ⭐ ŁATWO                                                                              │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐ ŚREDNI - tylko blok                                                                │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #7: PHYSICS SYSTEM PARAMETERS                                                                      │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Common/Physics.module.lua (SKOMPILOWANY - niedostępny)                    │
+│ POTENCJALNE PARAMETRY:                                                                                   │
+│   • Ball.RadPerStud           → Obroty piłki na studziê                                                  │
+│   • Ball.MaxShadowDistance    → Maksymalny dystans cienia                                                │
+│   • Ball.ShadowSize           → Rozmiar cienia (Min/Max)                                                 │
+│   • Collision margin          → MARGIN DETEKCJI (KLUCZOWY!)                                              │
+│   • Detection range           → ZASIĘG DETEKCJI (KLUCZOWY!)                                              │
+│                                                                                                            │
+│ EFEKT:       Zmiana parametrów fizyki = bardziej precyzyjna detekcja hitboxu                            │
+│ IMPLEMENTACJA: Wymaga dekompilacji lub reverse-engineeringu                                              │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐⭐⭐ TRUDNO                                                                        │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐⭐ GLOBALNY - wpływa na całą mechnikę piłki                                       │
+│ STATUS: Niezalecane - wymaga czasu na reverse-engineering                                                 │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #8: BALL SKINS MODIFIERS                                                                           │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Item/{BallName}.module.lua                                        │
+│ DOSTĘPNE SKINS:                                                                                          │
+│   AlienBall, RedDragonBall, KarasunoBall, SoccerBall, TennisBall                                        │
+│   BooBall, BrainBall, EvilEyeBall, PhoenixBall, i wiele innych...                                       │
+│                                                                                                            │
+│ EFEKT:       Każdy skin może mieć swoje hitbox modifikatory                                              │
+│ IMPLEMENTACJA: Dodaj HitboxMultiplier do definicji skina                                                 │
+│ PRZYKŁAD:    {                                                                                           │
+│                  Id = "AlienBall",                                                                       │
+│                  HitboxMultiplier = 1.5  ← DODAJ TO                                                      │
+│              }                                                                                            │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐ ŚREDNIO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐ NISKI - tylko dla danego skina                                                      │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #9: ABILITY SYSTEM PARAMETERS                                                                      │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Ability/{AbilityName}/{Property}.module.lua                       │
+│ DOSTĘPNE ZDOLNOŚCI:                                                                                      │
+│   • CurveSpike/PostAction.module.lua                                                                     │
+│   • MagneticPull/OnActivation.module.lua                                                                │
+│   • Moonball/Action.module.lua                                                                          │
+│   • ShieldBreaker/PostAction.module.lua                                                                 │
+│   • SteelBlock.module.lua                                                                                │
+│   • ZeroGravitySet/Action.module.lua                                                                    │
+│                                                                                                            │
+│ EFEKT:       Każda zdolność może mieć swój HitboxSize                                                    │
+│ IMPLEMENTACJA: Dodaj HitboxSize do OnActivation/PostAction                                               │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐ ŚREDNIO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐ ŚREDNI - tylko dla danej zdolności                                                 │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #10: SPECIAL MECHANICS SYSTEM                                                                      │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedStorage/Content/Special/{SpecialName}/{Property}.module.lua                       │
+│ DOSTĘPNE SPECJALNE:                                                                                      │
+│   • Jester/PostAction.module.lua                                                                        │
+│   • Hakka/PostAction.module.lua                                                                         │
+│   • TeamCaptain/PostAction.module.lua                                                                   │
+│   • Mikage/Special.module.lua                                                                           │
+│                                                                                                            │
+│ PARAMETRY:                                                                                               │
+│   • HitboxSize (Vector3)      → Rozmiar specjalnego hitboxu                                             │
+│   • HitboxOffset (Vector3)    → Przesunięcie hitboxu                                                    │
+│   • MaxActions (number)       → Liczba akcji (więcej akcji = więcej okazji)                             │
+│                                                                                                            │
+│ EFEKT:       Zwiększenie efectivności specjalnych umiejętności                                           │
+│ IMPLEMENTACJA: Zwiększ HitboxSize w Special/{Name}/Special.module.lua                                    │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐ ŚREDNIO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - wpływa na specjalne umiejętności                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #11: CHARACTER ATTRIBUTES & TILT SYSTEM                                                            │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedFirst/Controllers/BallController/Ball.module.lua (linia 81)                       │
+│ PARAMETR:    v28.Orientation = v28.Orientation * CFrame.fromOrientation(v34, 0, 0)                     │
+│              AutoTilt.Enabled = true/false                                                               │
+│                                                                                                            │
+│ EFEKT:       Zmiana orientacji piłki = zmiana efektywnego hitboxu                                        │
+│ IMPLEMENTACJA: Modyfikuj orientation multiplier                                                          │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐⭐ TRUDNO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐ ŚREDNI - wpływa na dynamikę tiltu                                                 │
+│ STATUS: Zaawansowane - wymaga głębokie zrozumienie systemu                                               │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #12: RAYCAST DISTANCE I RANGE PARAMETERS                                                           │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIKI:       • ReplicatedFirst/Controllers/GameController/AbilityGlow.module.lua                         │
+│              • ReplicatedStorage/Content/Ability/MagneticPull.module.lua                                 │
+│                                                                                                            │
+│ EFEKT:       Zwiększenie zakresu detekcji raycasta                                                        │
+│ IMPLEMENTACJA: Zwiększ wartości "range" i "distance" parametrów                                          │
+│ PRZYKŁAD:    range: 100 → 150                                                                           │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐ ŚREDNIO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - zwiększa efektywny zasięg hitboxa                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #13: NETWORK BALL STREAMING                                                                        │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ PLIK:        ReplicatedFirst/Controllers/BallController/Network.module.lua                               │
+│ PARAMETRY W PACZCE:                                                                                      │
+│   • Position (Vector3)       → Lokalizacja piłki                                                        │
+│   • Velocity (Vector3)       → Prędkość piłki                                                           │
+│   • ID (f64)                 → ID piłki                                                                  │
+│   • Skin (string)            → Typ skina                                                                │
+│                                                                                                            │
+│ EFEKT:       Bardziej precyzyjna synchronizacja = lepszy hitbox detection                               │
+│ IMPLEMENTACJA: Zwiększ precyzję buffer'ów danych                                                         │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐⭐ TRUDNO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - wpływa na globalną synchronizację                                       │
+│ STATUS: Niezalecane bez pełnego zrozumienia network systemu                                              │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #14: TIMEOUT & PERSISTENCE                                                                         │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ KONCEPCJA:   Przedłużanie czasu trwania hitboxów lub ich multiplikacja                                   │
+│                                                                                                            │
+│ TECHNIKI:                                                                                                │
+│   1. Zwiększenie czasu trwania hitboxu                                                                  │
+│   2. Multiplikowanie hitboxów (więcej hitboxów jednocześnie)                                            │
+│   3. Stacking hitboxów (jeden na drugim)                                                                │
+│   4. Delay przed deaktywacją hitboxu                                                                    │
+│                                                                                                            │
+│ EFEKT:       Przedłużony czas kontaktu z piłką                                                           │
+│ IMPLEMENTACJA: Modyfikuj timeout wartości w createHitbox                                                 │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐⭐ TRUDNO                                                                          │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐ MOCNY - globalny efekt na wszystkie hitboxy                                     │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ METODA #15: REGION3 & SPATIAL QUERIES                                                                     │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ KONCEPCJA:   Wykorzystanie przestrzennych zapytań do zwiększenia hitboxu                                 │
+│                                                                                                            │
+│ TECHNIKI:                                                                                                │
+│   1. Region3 queries z większym rozmiarem                                                                │
+│   2. Gęstniejsza siatka raycastów                                                                       │
+│   3. Sphere casting z większą kulą                                                                      │
+│                                                                                                            │
+│ EFEKT:       Lepsze wykrycie kolizji w większym obszarze                                                │
+│ IMPLEMENTACJA: Wymaga modyfikacji Physics.module.lua                                                     │
+│ STOPIEŃ TRUDNOŚCI: ⭐⭐⭐⭐ BARDZO TRUDNO                                                                │
+│ ZASIĘG WPŁYWU: ⭐⭐⭐⭐⭐ GLOBALNY - wpływa na całą mechanikę                                           │
+│ STATUS: Zaawansowane - wymaga zaawansowanej wiedzy                                                       │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                    RANKING METOD - TOP 3 NAJLEPSZE                                        ║
+╠════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                                            ║
+║ 🥇 METODA #5: PREDEFINIOWANE HITBOX FILES                                                                 ║
+║    ✓ Najprostsza do implementacji                                                                        ║
+║    ✓ Bezpośrednia kontrola nad każdym ruchem                                                             ║
+║    ✓ Żaden side-effect                                                                                   ║
+║    ✓ Łatwa do testowania                                                                                 ║
+║    → ZALECANE DLA POCZĄTKUJĄCYCH                                                                        ║
+║                                                                                                            ║
+║ 🥈 METODA #1: STYLE HITBOX PARAMETERS                                                                     ║
+║    ✓ Łatwa do wdrożenia                                                                                  ║
+║    ✓ Wpływa na całe style                                                                               ║
+║    ✓ Globalny efekt                                                                                      ║
+║    → ZALECANE DLA ŚREDNIOZAAWANSOWANYCH                                                                 ║
+║                                                                                                            ║
+║ 🥉 METODA #3: TILT HITBOX FACTOR                                                                          ║
+║    ✓ Maksymalnie 10x zwiększenie podczas tiltu                                                          ║
+║    ✓ Nie wpływa na zwykłe ruchy                                                                         ║
+║    ✓ Dynamiczny i interaktywny                                                                          ║
+║    → ZALECANE DLA GRAJĄCEGO GRACZA                                                                      ║
+║                                                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+SZYBKI PRZEGLĄD - TRUDNOŚĆ vs EFEKT
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  METODA          │ TRUDNOŚĆ │ EFEKT  │ ZASIĘG    │ SZYBKOŚĆ │ STABILNOŚĆ │ REKOMENDACJA             ║
+╠════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  1. Hitbox Files │ ⭐       │ ⭐⭐⭐⭐⭐│ Globalny  │ 🚀      │ Wysoka    │ NAJLEPSZE                ║
+║  2. Style Params │ ⭐       │ ⭐⭐⭐⭐ │ Globalny  │ 🚀      │ Wysoka    │ BARDZO DOBRE             ║
+║  3. TiltFactor   │ ⭐       │ ⭐⭐⭐⭐ │ Podczas   │ 🚀      │ Wysoka    │ DOBRE                    ║
+║  4. Charge Param │ ⭐⭐     │ ⭐⭐⭐  │ Globalny  │ ⚡      │ Średnia   │ OK                       ║
+║  5. Power Mult.  │ ⭐       │ ⭐⭐⭐  │ Zmienne   │ 🚀      │ Wysoka    │ ALTERNATYWA              ║
+║  6. BlockPower   │ ⭐       │ ⭐⭐    │ Blok tylko │ 🚀      │ Wysoka    │ SPECJALNE               ║
+║  7. Physics Sys. │ ⭐⭐⭐⭐  │ ⭐⭐⭐⭐⭐│ Globalny  │ 🐢      │ Niska     │ NIE ZALECANE             ║
+║  8. Ball Skins   │ ⭐⭐     │ ⭐⭐    │ Lokalny   │ ⚡      │ Średnia   │ BONUSOWE                 ║
+║  9. Abilities    │ ⭐⭐     │ ⭐⭐⭐  │ Lokalny   │ ⚡      │ Średnia   │ BONUSOWE                 ║
+║  10.Special Mech.│ ⭐⭐     │ ⭐⭐⭐⭐ │ Lokalny   │ ⚡      │ Średnia   │ DOBRE                    ║
+║  11.Tilt Attribs │ ⭐⭐⭐   │ ⭐⭐⭐  │ Zmienne   │ ⏳      │ Niska     │ ZAAWANSOWANE             ║
+║  12.Raycast Dist │ ⭐⭐     │ ⭐⭐⭐⭐ │ Globalny  │ ⚡      │ Średnia   │ DOBRE ALT.               ║
+║  13.Network      │ ⭐⭐⭐   │ ⭐⭐⭐  │ Globalny  │ 🐢      │ Niska     │ ZAAWANSOWANE             ║
+║  14.Timeout      │ ⭐⭐⭐   │ ⭐⭐⭐⭐ │ Globalny  │ ⏳      │ Niska     │ EKSPERYMENTALNE          ║
+║  15.Region3      │ ⭐⭐⭐⭐  │ ⭐⭐⭐⭐⭐│ Globalny  │ 🐢      │ Niska     │ TYLKO DLA EKSPW          ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
