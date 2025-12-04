@@ -1,0 +1,8 @@
+Name: Colored Carpet
+ClassName: Part
+Position: X=303.3717041015625, Y=541.4321899414062, Z=-1232.8262939453125
+Size: X=75.5025634765625, Y=0.0010000000474974513, Z=17.1286678314209
+Color: R=29, G=113, B=191
+Transparency: 0
+Anchored: false
+CanCollide: true

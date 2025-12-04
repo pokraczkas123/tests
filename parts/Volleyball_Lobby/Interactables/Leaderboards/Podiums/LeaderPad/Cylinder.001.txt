@@ -1,0 +1,10 @@
+Name: Cylinder.001
+ClassName: MeshPart
+Position: X=389.5089111328125, Y=42.235015869140625, Z=-1317.2352294921875
+Size: X=5.238110065460205, Y=0.0010000000474974513, Z=5.238109588623047
+Color: R=83, G=147, B=170
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://74773461089718
+TextureId: null

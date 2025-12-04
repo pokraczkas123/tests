@@ -1,0 +1,2 @@
+Name: Shurikorigawa
+ClassName: Model

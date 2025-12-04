@@ -1,0 +1,11 @@
+Name: Handle
+ClassName: MeshPart
+Position: X=0.09999990463256836, Y=0.5, Z=-5.200000762939453
+Size: X=1.8128024339675903, Y=2.084400177001953, Z=2.114145040512085
+Color: R=0, G=255, B=25
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: http://www.roblox.com/asset/?id=81642452
+TextureId: null

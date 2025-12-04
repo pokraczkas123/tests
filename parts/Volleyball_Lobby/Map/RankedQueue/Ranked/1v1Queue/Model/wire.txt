@@ -1,0 +1,10 @@
+Name: wire
+ClassName: MeshPart
+Position: X=316.7503967285156, Y=49.243408203125, Z=-1526.5101318359375
+Size: X=1.5064961910247803, Y=5.924737930297852, Z=1.380056381225586
+Color: R=252, G=255, B=0
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://112886130982760
+TextureId: null

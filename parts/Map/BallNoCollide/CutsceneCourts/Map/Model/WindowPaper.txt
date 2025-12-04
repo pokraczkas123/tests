@@ -1,0 +1,8 @@
+Name: WindowPaper
+ClassName: Part
+Position: X=-0.2370627522468567, Y=21.026565551757812, Z=-84.6042251586914
+Size: X=0.21035084128379822, Y=12.410699844360352, Z=62.68455123901367
+Color: R=237, G=234, B=234
+Transparency: 0
+Anchored: false
+CanCollide: true

@@ -1,0 +1,8 @@
+Name: FakeShadow
+ClassName: Part
+Position: X=-223.0500030517578, Y=6.750222206115723, Z=-1286.27001953125
+Size: X=98.75, Y=0.0010000000474974513, Z=53.694766998291016
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

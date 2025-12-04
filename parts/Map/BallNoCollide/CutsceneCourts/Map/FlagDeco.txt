@@ -1,0 +1,8 @@
+Name: FlagDeco
+ClassName: Part
+Position: X=-0.24999339878559113, Y=33.48179626464844, Z=83.25094604492188
+Size: X=0.001000000280328095, Y=4.330930709838867, Z=110.5000228881836
+Color: R=237, G=234, B=234
+Transparency: 1
+Anchored: false
+CanCollide: false

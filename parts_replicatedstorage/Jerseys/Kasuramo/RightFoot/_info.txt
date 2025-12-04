@@ -1,0 +1,11 @@
+Name: RightFoot
+ClassName: MeshPart
+Position: X=122.5, Y=0.1534605622291565, Z=38.5
+Size: X=1, Y=0.2999992370605469, Z=1
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430071082
+TextureId: null

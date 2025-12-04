@@ -1,0 +1,8 @@
+Name: Court
+ClassName: Part
+Position: X=-0.16193509101867676, Y=-5.324522972106934, Z=-0.01815587282180786
+Size: X=51.5000114440918, Y=1.000000238418579, Z=101.5000228881836
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: true

@@ -1,0 +1,10 @@
+Name: Speaker Large
+ClassName: MeshPart
+Position: X=341.5319519042969, Y=65.53057098388672, Z=-1393.4208984375
+Size: X=2.7278025150299072, Y=5.937430381774902, Z=2.796663284301758
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://96907714131217
+TextureId: null

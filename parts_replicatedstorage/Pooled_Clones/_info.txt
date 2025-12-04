@@ -1,0 +1,2 @@
+Name: Pooled Clones
+ClassName: Folder

@@ -1,0 +1,10 @@
+Name: Pillar
+ClassName: MeshPart
+Position: X=428.9759826660156, Y=58.794612884521484, Z=-1379.9869384765625
+Size: X=28.669538497924805, Y=36.44126892089844, Z=7.126534461975098
+Color: R=42, G=54, B=74
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://90946145730166
+TextureId: null

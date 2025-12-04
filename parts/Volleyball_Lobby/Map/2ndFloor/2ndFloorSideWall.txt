@@ -1,0 +1,8 @@
+Name: 2ndFloorSideWall
+ClassName: UnionOperation
+Position: X=235.68600463867188, Y=124.4329605102539, Z=-1424.324951171875
+Size: X=52.00000762939453, Y=25.000003814697266, Z=52.00000762939453
+Color: R=224, G=159, B=73
+Transparency: 0
+Anchored: false
+CanCollide: true

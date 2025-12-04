@@ -1,0 +1,9 @@
+Name: HumanoidRootPart
+ClassName: Part
+Position: X=117, Y=3.003459930419922, Z=38.49945068359375
+Size: X=2, Y=2, Z=1
+Color: R=245, G=205, B=48
+Transparency: 1
+Anchored: false
+CanCollide: true
+Material: null

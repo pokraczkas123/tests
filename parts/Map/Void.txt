@@ -1,0 +1,8 @@
+Name: Void
+ClassName: Part
+Position: X=4.3380913734436035, Y=25.67557716369629, Z=-103.51862335205078
+Size: X=147.00003051757812, Y=75.00001525878906, Z=29.00000762939453
+Color: R=51, G=88, B=130
+Transparency: 1
+Anchored: false
+CanCollide: false

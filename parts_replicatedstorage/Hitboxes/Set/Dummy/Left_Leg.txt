@@ -1,0 +1,9 @@
+Name: Left Leg
+ClassName: Part
+Position: X=37.50941467285156, Y=1, Z=0
+Size: X=1, Y=2, Z=1
+Color: R=27, G=42, B=53
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null

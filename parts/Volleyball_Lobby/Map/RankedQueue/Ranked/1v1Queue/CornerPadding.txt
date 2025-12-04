@@ -1,0 +1,10 @@
+Name: CornerPadding
+ClassName: MeshPart
+Position: X=290.3224792480469, Y=46.79215621948242, Z=-1529.3616943359375
+Size: X=2.500000476837158, Y=12.916593551635742, Z=2.500000476837158
+Color: R=56, G=160, B=255
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://119857708600073
+TextureId: null

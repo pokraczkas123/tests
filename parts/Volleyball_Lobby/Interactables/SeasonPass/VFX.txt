@@ -1,0 +1,8 @@
+Name: VFX
+ClassName: Part
+Position: X=282.15966796875, Y=43.74320983886719, Z=-1384.5924072265625
+Size: X=6.121758937835693, Y=6.321491241455078, Z=7.344387054443359
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

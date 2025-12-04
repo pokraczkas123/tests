@@ -1,0 +1,11 @@
+Name: Head
+ClassName: MeshPart
+Position: X=111.87647247314453, Y=4.50346040725708, Z=39.15273666381836
+Size: X=1.1978397369384766, Y=1.2024002075195312, Z=1.1979007720947266
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430070993
+TextureId: null

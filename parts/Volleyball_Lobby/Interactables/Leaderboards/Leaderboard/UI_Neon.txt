@@ -1,0 +1,8 @@
+Name: UI/Neon
+ClassName: Part
+Position: X=303.1900634765625, Y=60.18471908569336, Z=-1527.385986328125
+Size: X=0.026502497494220734, Y=7.301283359527588, Z=16.267303466796875
+Color: R=158, G=151, B=156
+Transparency: 0
+Anchored: false
+CanCollide: true

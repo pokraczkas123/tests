@@ -1,0 +1,10 @@
+Name: UpperTorso
+ClassName: MeshPart
+Position: X=279.6152648925781, Y=44.826927185058594, Z=-1380.5030517578125
+Size: X=1.9602888822555542, Y=1.600034236907959, Z=0.9801447987556458
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715593
+TextureId: null

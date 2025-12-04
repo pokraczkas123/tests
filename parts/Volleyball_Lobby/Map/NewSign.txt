@@ -1,0 +1,8 @@
+Name: NewSign
+ClassName: Part
+Position: X=280.4220886230469, Y=49.932003021240234, Z=-1223.375
+Size: X=7.900001049041748, Y=6.600000858306885, Z=15.100003242492676
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

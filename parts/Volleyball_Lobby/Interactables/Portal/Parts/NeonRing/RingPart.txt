@@ -1,0 +1,8 @@
+Name: RingPart
+ClassName: Part
+Position: X=255.86343383789062, Y=41.48121643066406, Z=-1357.58154296875
+Size: X=0.17550000548362732, Y=0.09750000387430191, Z=4.547399997711182
+Color: R=190, G=126, B=48
+Transparency: 0
+Anchored: false
+CanCollide: false

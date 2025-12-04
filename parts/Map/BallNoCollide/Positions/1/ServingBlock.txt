@@ -1,0 +1,8 @@
+Name: ServingBlock
+ClassName: Part
+Position: X=18.838151931762695, Y=-4.324521064758301, Z=56.98210525512695
+Size: X=4.000000953674316, Y=1.000000238418579, Z=2.000000476837158
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

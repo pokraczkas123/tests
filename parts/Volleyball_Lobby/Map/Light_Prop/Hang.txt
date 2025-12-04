@@ -1,0 +1,8 @@
+Name: Hang
+ClassName: Part
+Position: X=280.9203796386719, Y=102.85504913330078, Z=-1373.35986328125
+Size: X=0.2500000596046448, Y=38.1549186706543, Z=0.2500000596046448
+Color: R=98, G=98, B=98
+Transparency: 0
+Anchored: false
+CanCollide: true

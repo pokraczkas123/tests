@@ -1,0 +1,10 @@
+Name: Antenna
+ClassName: MeshPart
+Position: X=5.513429641723633e-7, Y=4.85614013671875, Z=0.1391592025756836
+Size: X=0.19639915227890015, Y=10.269962310791016, Z=48.10537338256836
+Color: R=252, G=250, B=255
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://98325832954057
+TextureId: null

@@ -1,0 +1,10 @@
+Name: LowerTorso
+ClassName: MeshPart
+Position: X=303.2950134277344, Y=43.777000427246094, Z=-1203.43212890625
+Size: X=1.999999761581421, Y=0.4000554382801056, Z=1.0000001192092896
+Color: R=212, G=255, B=255
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715652
+TextureId: null

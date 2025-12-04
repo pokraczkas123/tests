@@ -1,0 +1,8 @@
+Name: Scifi Railing
+ClassName: Part
+Position: X=262.6860046386719, Y=74.18231201171875, Z=-1355.574951171875
+Size: X=5.000000953674316, Y=1.000000238418579, Z=82.00001525878906
+Color: R=17, G=17, B=17
+Transparency: 1
+Anchored: false
+CanCollide: false

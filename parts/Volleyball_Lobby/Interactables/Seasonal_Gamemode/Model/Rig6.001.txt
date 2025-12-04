@@ -1,0 +1,10 @@
+Name: Rig6.001
+ClassName: MeshPart
+Position: X=329.2733154296875, Y=47.22107696533203, Z=-1385.5457763671875
+Size: X=4.127403259277344, Y=6.829587459564209, Z=6.009368419647217
+Color: R=42, G=97, B=180
+Transparency: 0.5
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://119104992664284
+TextureId: null

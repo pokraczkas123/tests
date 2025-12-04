@@ -1,0 +1,8 @@
+Name: Head
+ClassName: Part
+Position: X=303.2950134277344, Y=46.077030181884766, Z=-1203.43212890625
+Size: X=2, Y=1, Z=1
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false

@@ -1,0 +1,8 @@
+Name: Flower
+ClassName: Part
+Position: X=-99.31668090820312, Y=-5.813353538513184, Z=-30.999996185302734
+Size: X=0.010000002570450306, Y=20.000003814697266, Z=20.000003814697266
+Color: R=237, G=234, B=234
+Transparency: 1
+Anchored: false
+CanCollide: false

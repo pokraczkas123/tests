@@ -1,0 +1,10 @@
+Name: Roof.001
+ClassName: MeshPart
+Position: X=404.4391174316406, Y=72.98184204101562, Z=-1355.4486083984375
+Size: X=95.74823760986328, Y=4.2135748863220215, Z=95.7481918334961
+Color: R=83, G=147, B=170
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://117855919115511
+TextureId: null

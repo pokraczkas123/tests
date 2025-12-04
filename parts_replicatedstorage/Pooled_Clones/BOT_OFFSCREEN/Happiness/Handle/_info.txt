@@ -1,0 +1,11 @@
+Name: Handle
+ClassName: MeshPart
+Position: X=-0.0006275177001953125, Y=-245.55972290039062, Z=-0.16153526306152344
+Size: X=1.3832510709762573, Y=1.3855109214782715, Z=1.5639519691467285
+Color: R=0, G=255, B=25
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: rbxassetid://6793577384
+TextureId: null

@@ -1,0 +1,10 @@
+Name: Tarpaulin
+ClassName: MeshPart
+Position: X=270.8558044433594, Y=67.13170623779297, Z=-1355.324951171875
+Size: X=0.34160879254341125, Y=8.554535865783691, Z=76.12828826904297
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://74349167730963
+TextureId: null

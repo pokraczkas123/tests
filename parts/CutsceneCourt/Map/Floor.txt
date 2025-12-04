@@ -1,0 +1,8 @@
+Name: Floor
+ClassName: Part
+Position: X=-223.0500030517578, Y=0.4997262954711914, Z=-1389.4000244140625
+Size: X=170, Y=1, Z=110
+Color: R=175, G=129, B=55
+Transparency: 0
+Anchored: false
+CanCollide: true

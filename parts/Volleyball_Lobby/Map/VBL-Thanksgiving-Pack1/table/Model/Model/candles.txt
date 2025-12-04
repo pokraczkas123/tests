@@ -1,0 +1,10 @@
+Name: candles
+ClassName: MeshPart
+Position: X=300.8309631347656, Y=47.463775634765625, Z=-1206.5325927734375
+Size: X=1.8331165313720703, Y=5.70109224319458, Z=2.1002657413482666
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://85738576265959
+TextureId: null

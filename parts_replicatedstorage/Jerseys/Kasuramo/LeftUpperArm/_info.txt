@@ -1,0 +1,11 @@
+Name: LeftUpperArm
+ClassName: MeshPart
+Position: X=120.5, Y=3.372133493423462, Z=38.5
+Size: X=1, Y=1.1686992645263672, Z=1
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430071044
+TextureId: null

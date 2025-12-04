@@ -1,0 +1,10 @@
+Name: pumpl1
+ClassName: MeshPart
+Position: X=309.3330993652344, Y=42.53895568847656, Z=-1202.1097412109375
+Size: X=5.567174911499023, Y=2.9791996479034424, Z=5.661311626434326
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://100587593037486
+TextureId: null

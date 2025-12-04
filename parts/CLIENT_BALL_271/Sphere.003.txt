@@ -1,0 +1,10 @@
+Name: Sphere.003
+ClassName: MeshPart
+Position: X=-10.674844741821289, Y=-3.539855480194092, Z=-32.04741668701172
+Size: X=2.5667338371276855, Y=2.5667364597320557, Z=2.5667355060577393
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://134291883372948
+TextureId: null

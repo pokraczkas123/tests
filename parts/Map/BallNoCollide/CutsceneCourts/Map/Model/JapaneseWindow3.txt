@@ -1,0 +1,10 @@
+Name: JapaneseWindow3
+ClassName: MeshPart
+Position: X=-0.16821478307247162, Y=20.791458129882812, Z=-84.4916763305664
+Size: X=0.4353671967983246, Y=12.7820405960083, Z=63.66396713256836
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://126633487691247
+TextureId: null

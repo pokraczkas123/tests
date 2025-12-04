@@ -1,0 +1,8 @@
+Name: FIRE
+ClassName: Part
+Position: X=0.674437403678894, Y=-2.287245750427246, Z=-80.83224487304688
+Size: X=1.5842872858047485, Y=1.5842872858047485, Z=1.5842872858047485
+Color: R=0, G=255, B=0
+Transparency: 1
+Anchored: false
+CanCollide: true

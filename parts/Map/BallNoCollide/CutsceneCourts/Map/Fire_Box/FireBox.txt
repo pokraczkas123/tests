@@ -1,0 +1,10 @@
+Name: FireBox
+ClassName: MeshPart
+Position: X=54.432254791259766, Y=2.6906566619873047, Z=10.368569374084473
+Size: X=1.1230477094650269, Y=6.268287658691406, Z=3.635526418685913
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://90893604106773
+TextureId: null

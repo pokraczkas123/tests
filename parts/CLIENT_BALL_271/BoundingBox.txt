@@ -1,0 +1,8 @@
+Name: BoundingBox
+ClassName: Part
+Position: X=-10.67485523223877, Y=-3.539679527282715, Z=-32.04736328125
+Size: X=2.566999912261963, Y=2.566999912261963, Z=2.566999912261963
+Color: R=255, G=0, B=0
+Transparency: 1
+Anchored: false
+CanCollide: false

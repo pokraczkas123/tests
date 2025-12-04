@@ -1,0 +1,8 @@
+Name: Tree Light
+ClassName: Part
+Position: X=-133.18939208984375, Y=73.84091186523438, Z=-106.99421691894531
+Size: X=144.00003051757812, Y=57.00001525878906, Z=1.000000238418579
+Color: R=86, G=66, B=54
+Transparency: 1
+Anchored: false
+CanCollide: true

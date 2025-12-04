@@ -1,0 +1,9 @@
+Name: Left Arm
+ClassName: Part
+Position: X=67.5, Y=3, Z=0
+Size: X=1, Y=2, Z=1
+Color: R=245, G=205, B=48
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null

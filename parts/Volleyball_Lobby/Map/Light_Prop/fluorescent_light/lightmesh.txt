@@ -1,0 +1,10 @@
+Name: lightmesh
+ClassName: MeshPart
+Position: X=303.1415710449219, Y=70.96827697753906, Z=-1520.02587890625
+Size: X=5.60664176940918, Y=1.845422387123108, Z=15.225041389465332
+Color: R=27, G=42, B=53
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://126532006085455
+TextureId: null

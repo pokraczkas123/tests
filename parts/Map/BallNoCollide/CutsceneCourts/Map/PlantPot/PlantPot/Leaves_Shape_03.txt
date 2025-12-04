@@ -1,0 +1,10 @@
+Name: Leaves_Shape_03
+ClassName: MeshPart
+Position: X=52.87183380126953, Y=-1.2796096801757812, Z=65.1170883178711
+Size: X=7.226412296295166, Y=4.029291152954102, Z=6.587160110473633
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://13330737475
+TextureId: null

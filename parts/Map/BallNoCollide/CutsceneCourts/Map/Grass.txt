@@ -1,0 +1,10 @@
+Name: Grass
+ClassName: MeshPart
+Position: X=-117.79112243652344, Y=-2.512557029724121, Z=26.003406524658203
+Size: X=6.6158905029296875, Y=8.606852531433105, Z=8.370235443115234
+Color: R=52, G=142, B=64
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://96561042506084
+TextureId: null

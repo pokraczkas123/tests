@@ -1,0 +1,10 @@
+Name: RightLowerArm
+ClassName: MeshPart
+Position: X=278.8366394042969, Y=44.51080322265625, Z=-1379.0819091796875
+Size: X=0.980144202709198, Y=1.0519180297851562, Z=0.9801444411277771
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715562
+TextureId: null

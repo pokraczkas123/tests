@@ -1,0 +1,10 @@
+Name: Vert.001
+ClassName: MeshPart
+Position: X=-10.99819278717041, Y=-2.3513123989105225, Z=-32.09447479248047
+Size: X=2.4160428047180176, Y=1.494411826133728, Z=2.4160444736480713
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://102766179741371
+TextureId: null

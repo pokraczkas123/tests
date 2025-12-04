@@ -1,0 +1,10 @@
+Name: turkey.001
+ClassName: MeshPart
+Position: X=303.8893127441406, Y=45.35456085205078, Z=-1206.5040283203125
+Size: X=4.050751686096191, Y=1.6793676614761353, Z=4.578605651855469
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://79875884928037
+TextureId: null

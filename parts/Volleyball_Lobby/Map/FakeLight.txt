@@ -1,0 +1,8 @@
+Name: FakeLight
+ClassName: Part
+Position: X=261.9360046386719, Y=41.43246078491211, Z=-1355.29736328125
+Size: X=15.75000286102295, Y=0.0010000001639127731, Z=35.19477462768555
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

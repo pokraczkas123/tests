@@ -1,0 +1,10 @@
+Name: Hinata14
+ClassName: MeshPart
+Position: X=331.8936462402344, Y=46.32590866088867, Z=-1326.6619873046875
+Size: X=5.643477439880371, Y=6.371854305267334, Z=5.401626110076904
+Color: R=139, G=197, B=154
+Transparency: 0.15000000596046448
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://130805855782476
+TextureId: null

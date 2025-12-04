@@ -1,0 +1,10 @@
+Name: 1
+ClassName: MeshPart
+Position: X=264.4557189941406, Y=47.009765625, Z=-1343.2564697265625
+Size: X=0.4867236614227295, Y=11.157034873962402, Z=10.872675895690918
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://89425064109001
+TextureId: null

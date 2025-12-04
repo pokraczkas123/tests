@@ -1,0 +1,2 @@
+Name: OriginalSize
+ClassName: Vector3Value

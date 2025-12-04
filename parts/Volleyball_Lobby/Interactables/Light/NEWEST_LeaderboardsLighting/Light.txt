@@ -1,0 +1,8 @@
+Name: Light
+ClassName: Part
+Position: X=386.5389709472656, Y=58.465999603271484, Z=-1313.14990234375
+Size: X=1, Y=1, Z=1
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

@@ -1,0 +1,8 @@
+Name: Wedge
+ClassName: Part
+Position: X=277.6860656738281, Y=85.55722045898438, Z=-1419.949951171875
+Size: X=133.00001525878906, Y=27.2500057220459, Z=37.75000762939453
+Color: R=90, G=89, B=91
+Transparency: 0
+Anchored: false
+CanCollide: true

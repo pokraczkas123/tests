@@ -1,0 +1,10 @@
+Name: RightUpperLeg
+ClassName: MeshPart
+Position: X=279.3768615722656, Y=43.20695495605469, Z=-1379.9615478515625
+Size: X=0.9801449179649353, Y=1.2165685892105103, Z=0.9801119565963745
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715641
+TextureId: null

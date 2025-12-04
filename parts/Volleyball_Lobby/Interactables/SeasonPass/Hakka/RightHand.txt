@@ -1,0 +1,10 @@
+Name: RightHand
+ClassName: MeshPart
+Position: X=278.898681640625, Y=43.907981872558594, Z=-1378.92578125
+Size: X=0.9801443219184875, Y=0.3000306785106659, Z=0.9801443219184875
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715557
+TextureId: null

@@ -1,0 +1,10 @@
+Name: furnacetop
+ClassName: MeshPart
+Position: X=0.43023747205734253, Y=22.048324584960938, Z=-83.9106216430664
+Size: X=12.929137229919434, Y=53.723609924316406, Z=18.55792999267578
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://70498837703496
+TextureId: null

@@ -1,0 +1,10 @@
+Name: ShopRing
+ClassName: MeshPart
+Position: X=303.3719787597656, Y=41.6024169921875, Z=-1203.611083984375
+Size: X=18, Y=0.25, Z=18
+Color: R=115, G=133, B=172
+Transparency: 1
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://83468860487335
+TextureId: null

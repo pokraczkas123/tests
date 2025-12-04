@@ -1,0 +1,10 @@
+Name: InnerCylinder
+ClassName: MeshPart
+Position: X=267.0005798339844, Y=41.47398376464844, Z=-1355.369873046875
+Size: X=23.400001525878906, Y=0.19499993324279785, Z=23.400001525878906
+Color: R=255, G=170, B=0
+Transparency: 0.800000011920929
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://8091848285
+TextureId: null

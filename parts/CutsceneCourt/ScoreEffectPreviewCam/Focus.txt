@@ -1,0 +1,8 @@
+Name: Focus
+ClassName: Part
+Position: X=-223.0500030517578, Y=1, Z=-1415.199951171875
+Size: X=1, Y=1, Z=1
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

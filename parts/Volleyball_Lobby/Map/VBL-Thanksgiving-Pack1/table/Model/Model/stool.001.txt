@@ -1,0 +1,10 @@
+Name: stool.001
+ClassName: MeshPart
+Position: X=303.1240539550781, Y=42.46700668334961, Z=-1212.364501953125
+Size: X=1.8655579090118408, Y=2.0380842685699463, Z=6.253101825714111
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://91774669289617
+TextureId: null

@@ -1,0 +1,8 @@
+Name: Net
+ClassName: Part
+Position: X=344.8360290527344, Y=59.373226165771484, Z=-1355.4708251953125
+Size: X=30.7500057220459, Y=8.000001907348633, Z=0.0010000469628721476
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

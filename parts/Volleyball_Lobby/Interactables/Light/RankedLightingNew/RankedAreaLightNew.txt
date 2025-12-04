@@ -1,0 +1,8 @@
+Name: RankedAreaLightNew
+ClassName: Part
+Position: X=271.4360046386719, Y=63.13199996948242, Z=-1506.52490234375
+Size: X=1, Y=1, Z=1
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

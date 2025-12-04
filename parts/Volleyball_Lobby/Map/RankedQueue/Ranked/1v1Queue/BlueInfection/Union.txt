@@ -1,0 +1,8 @@
+Name: Union
+ClassName: UnionOperation
+Position: X=302.4942932128906, Y=41.30790328979492, Z=-1512.3408203125
+Size: X=13.4681396484375, Y=0.38929688930511475, Z=21.6678466796875
+Color: R=93, G=110, B=245
+Transparency: 0.3999999761581421
+Anchored: false
+CanCollide: true

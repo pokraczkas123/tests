@@ -1,0 +1,10 @@
+Name: gradient
+ClassName: MeshPart
+Position: X=277.0692138671875, Y=46.518089294433594, Z=-1372.2318115234375
+Size: X=3.0316858291625977, Y=3.2182319164276123, Z=0.4236240088939667
+Color: R=163, G=162, B=165
+Transparency: 0.10000000149011612
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://103830269081977
+TextureId: null

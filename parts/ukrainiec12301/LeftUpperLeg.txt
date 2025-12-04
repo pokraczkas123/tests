@@ -1,0 +1,10 @@
+Name: LeftUpperLeg
+ClassName: MeshPart
+Position: X=1.719670057296753, Y=-3.233363628387451, Z=-33.31388854980469
+Size: X=1, Y=1.2166004180908203, Z=0.9998989105224609
+Color: R=110, G=153, B=202
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430071065
+TextureId: null

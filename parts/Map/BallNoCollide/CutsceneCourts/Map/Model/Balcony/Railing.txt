@@ -1,0 +1,8 @@
+Name: Railing
+ClassName: Part
+Position: X=44.87525177001953, Y=15.186521530151367, Z=81.00057983398438
+Size: X=0.2500000596046448, Y=4.250000953674316, Z=0.2500000596046448
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true

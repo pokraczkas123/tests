@@ -1,0 +1,8 @@
+Name: Neon
+ClassName: Part
+Position: X=262.6860046386719, Y=51.55691146850586, Z=-1355.324951171875
+Size: X=2.000000476837158, Y=20.250003814697266, Z=23.500003814697266
+Color: R=232, G=121, B=84
+Transparency: 0
+Anchored: false
+CanCollide: true

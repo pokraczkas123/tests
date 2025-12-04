@@ -1,0 +1,10 @@
+Name: Net
+ClassName: MeshPart
+Position: X=-223.0500030517578, Y=7.990643501281738, Z=-1384.4000244140625
+Size: X=0.0010000000474974513, Y=4.52895450592041, Z=50.848453521728516
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://106312975269462
+TextureId: null

@@ -1,0 +1,10 @@
+Name: plates.001
+ClassName: MeshPart
+Position: X=305.8493347167969, Y=44.72705078125, Z=-1209.0885009765625
+Size: X=2.284949541091919, Y=0.18349212408065796, Z=2.28495192527771
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://140603833977790
+TextureId: null

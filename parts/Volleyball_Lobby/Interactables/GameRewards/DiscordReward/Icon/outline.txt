@@ -1,0 +1,10 @@
+Name: outline
+ClassName: MeshPart
+Position: X=280.4549865722656, Y=46.60269546508789, Z=-1327.1768798828125
+Size: X=3.6795101165771484, Y=2.8143012523651123, Z=0.49105411767959595
+Color: R=27, G=42, B=53
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://96693344904127
+TextureId: null

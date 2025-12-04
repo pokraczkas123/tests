@@ -1,0 +1,10 @@
+Name: pumpie.001
+ClassName: MeshPart
+Position: X=299.4532775878906, Y=45.404022216796875, Z=-1206.5980224609375
+Size: X=2.825467109680176, Y=1.729134202003479, Z=2.8254647254943848
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://107431202273037
+TextureId: null

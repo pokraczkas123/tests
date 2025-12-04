@@ -1,0 +1,10 @@
+Name: Fuji
+ClassName: MeshPart
+Position: X=621.7953491210938, Y=-104.54441833496094, Z=-194.56927490234375
+Size: X=1511.56103515625, Y=396.3146667480469, Z=1491.0252685546875
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://107138574401006
+TextureId: null

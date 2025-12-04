@@ -1,0 +1,10 @@
+Name: Neon
+ClassName: MeshPart
+Position: X=280.4549865722656, Y=46.617774963378906, Z=-1327.1767578125
+Size: X=3.510279893875122, Y=2.6745717525482178, Z=0.3321791887283325
+Color: R=123, G=47, B=123
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://118808764336991
+TextureId: null

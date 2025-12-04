@@ -1,0 +1,10 @@
+Name: Corner Scifi
+ClassName: MeshPart
+Position: X=350.7209777832031, Y=56.08941650390625, Z=-1527.136962890625
+Size: X=7.772818565368652, Y=29.31465721130371, Z=7.772823810577393
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://112616046502244
+TextureId: null

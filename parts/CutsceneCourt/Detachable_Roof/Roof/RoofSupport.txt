@@ -1,0 +1,10 @@
+Name: RoofSupport
+ClassName: MeshPart
+Position: X=-223.26901245117188, Y=54.00724411010742, Z=-1474.2650146484375
+Size: X=2.5, Y=29.854000091552734, Z=112.97100067138672
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://87850949571344
+TextureId: null

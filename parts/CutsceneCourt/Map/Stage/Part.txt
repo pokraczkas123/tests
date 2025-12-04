@@ -1,0 +1,8 @@
+Name: Part
+ClassName: Part
+Position: X=-223.0500030517578, Y=6.374726295471191, Z=-1289.9000244140625
+Size: X=18, Y=0.75, Z=61
+Color: R=165, G=102, B=55
+Transparency: 0
+Anchored: false
+CanCollide: true

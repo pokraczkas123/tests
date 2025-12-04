@@ -1,0 +1,8 @@
+Name: Wall
+ClassName: Part
+Position: X=299.1860046386719, Y=118.93289947509766, Z=-1448.824951171875
+Size: X=1.000000238418579, Y=14.000000953674316, Z=78.00001525878906
+Color: R=224, G=159, B=73
+Transparency: 0
+Anchored: false
+CanCollide: true

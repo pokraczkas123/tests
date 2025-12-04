@@ -1,0 +1,8 @@
+Name: Trophy
+ClassName: Part
+Position: X=332.8351135253906, Y=46.278564453125, Z=-1370.9036865234375
+Size: X=2.1965019702911377, Y=2.2203595638275146, Z=0.6302468776702881
+Color: R=234, G=139, B=75
+Transparency: 1
+Anchored: false
+CanCollide: false

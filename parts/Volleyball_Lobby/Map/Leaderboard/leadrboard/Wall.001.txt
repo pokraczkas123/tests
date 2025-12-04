@@ -1,0 +1,10 @@
+Name: Wall.001
+ClassName: MeshPart
+Position: X=405.6599426269531, Y=42.165245056152344, Z=-1355.449951171875
+Size: X=95.6368637084961, Y=3.227926015853882, Z=98.08123779296875
+Color: R=42, G=54, B=74
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://89186613555467
+TextureId: null

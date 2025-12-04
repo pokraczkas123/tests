@@ -1,0 +1,8 @@
+Name: OuterCourt
+ClassName: Part
+Position: X=-41.16212463378906, Y=-5.316725730895996, Z=-0.018155157566070557
+Size: X=29.700000762939453, Y=1.0065512657165527, Z=182
+Color: R=51, G=88, B=130
+Transparency: 1
+Anchored: false
+CanCollide: true

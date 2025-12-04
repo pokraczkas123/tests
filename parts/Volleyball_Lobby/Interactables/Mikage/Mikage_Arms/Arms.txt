@@ -1,0 +1,10 @@
+Name: Arms
+ClassName: MeshPart
+Position: X=303.2949523925781, Y=46.91737365722656, Z=-1202.057373046875
+Size: X=5.3075127601623535, Y=5.255502700805664, Z=2.0365548133850098
+Color: R=163, G=162, B=165
+Transparency: 0.25
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://72862791873502
+TextureId: null

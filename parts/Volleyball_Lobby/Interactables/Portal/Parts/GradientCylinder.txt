@@ -1,0 +1,10 @@
+Name: GradientCylinder
+ClassName: MeshPart
+Position: X=267.0005798339844, Y=42.47889709472656, Z=-1355.369873046875
+Size: X=23.400001525878906, Y=1.7799594402313232, Z=23.400001525878906
+Color: R=248, G=248, B=248
+Transparency: 1
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://8091779363
+TextureId: null

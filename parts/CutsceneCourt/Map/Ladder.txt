@@ -1,0 +1,10 @@
+Name: Ladder
+ClassName: MeshPart
+Position: X=-268.96881103515625, Y=10.950934410095215, Z=-1467.1402587890625
+Size: X=4.12567663192749, Y=19.902667999267578, Z=3.379289388656616
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://79574143871303
+TextureId: null

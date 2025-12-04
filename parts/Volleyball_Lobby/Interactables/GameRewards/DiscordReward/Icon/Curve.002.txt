@@ -1,0 +1,10 @@
+Name: Curve.002
+ClassName: MeshPart
+Position: X=280.4549865722656, Y=46.6025390625, Z=-1327.1767578125
+Size: X=3.5420920848846436, Y=2.674267530441284, Z=0.35923388600349426
+Color: R=163, G=162, B=165
+Transparency: 0.30000001192092896
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://71566348538908
+TextureId: null

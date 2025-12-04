@@ -1,0 +1,8 @@
+Name: LowerWall
+ClassName: Part
+Position: X=55.500247955322266, Y=-3.0863542556762695, Z=-0.25000256299972534
+Size: X=1.000000238418579, Y=3.5547642707824707, Z=171.0000457763672
+Color: R=108, G=88, B=75
+Transparency: 0
+Anchored: false
+CanCollide: true

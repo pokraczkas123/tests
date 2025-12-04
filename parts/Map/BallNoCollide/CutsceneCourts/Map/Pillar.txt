@@ -1,0 +1,8 @@
+Name: Pillar
+ClassName: Part
+Position: X=45.766815185546875, Y=3.1855077743530273, Z=42.00956344604492
+Size: X=1.5000003576278687, Y=16.000003814697266, Z=1.5000003576278687
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true

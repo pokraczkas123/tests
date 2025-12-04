@@ -1,0 +1,10 @@
+Name: Seats
+ClassName: MeshPart
+Position: X=282.0069274902344, Y=94.43253326416016, Z=-1430.0755615234375
+Size: X=35.25122833251953, Y=0.001000000280328095, Z=4.893033027648926
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://91180891338063
+TextureId: null

@@ -1,0 +1,8 @@
+Name: LightPart
+ClassName: Part
+Position: X=305.2359619140625, Y=63.03199005126953, Z=-1684.3250732421875
+Size: X=4, Y=1, Z=2
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false

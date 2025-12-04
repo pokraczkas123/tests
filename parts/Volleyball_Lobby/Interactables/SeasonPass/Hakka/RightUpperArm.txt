@@ -1,0 +1,10 @@
+Name: RightUpperArm
+ClassName: MeshPart
+Position: X=278.8656005859375, Y=45.08827209472656, Z=-1379.176025390625
+Size: X=0.9801440834999084, Y=1.168670654296875, Z=0.9801443815231323
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715576
+TextureId: null

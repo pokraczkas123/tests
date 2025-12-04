@@ -1,0 +1,8 @@
+Name: Courtlines
+ClassName: UnionOperation
+Position: X=-223.0500030517578, Y=1.0241518020629883, Z=-1384.4000244140625
+Size: X=49.999969482421875, Y=0.0010000000474974513, Z=100
+Color: R=226, G=226, B=226
+Transparency: 0
+Anchored: false
+CanCollide: false

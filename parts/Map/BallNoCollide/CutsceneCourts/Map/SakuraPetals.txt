@@ -1,0 +1,8 @@
+Name: SakuraPetals
+ClassName: Part
+Position: X=-64.66999053955078, Y=29.829002380371094, Z=-0.7865082621574402
+Size: X=18.792543411254883, Y=8.51950454711914, Z=160.42909240722656
+Color: R=86, G=66, B=54
+Transparency: 5
+Anchored: false
+CanCollide: true

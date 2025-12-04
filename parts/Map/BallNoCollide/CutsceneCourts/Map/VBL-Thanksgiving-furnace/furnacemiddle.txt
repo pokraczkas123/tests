@@ -1,0 +1,10 @@
+Name: furnacemiddle
+ClassName: MeshPart
+Position: X=0.43023794889450073, Y=25.831893920898438, Z=-83.3998794555664
+Size: X=7.915470600128174, Y=40.8120231628418, Z=13.033790588378906
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://113925214026343
+TextureId: null

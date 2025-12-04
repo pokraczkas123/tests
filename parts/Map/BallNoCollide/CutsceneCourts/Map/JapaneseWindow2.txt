@@ -1,0 +1,10 @@
+Name: JapaneseWindow2
+ClassName: MeshPart
+Position: X=55.11670684814453, Y=23.563636779785156, Z=-10.509085655212402
+Size: X=0.5000001192092896, Y=20.000003814697266, Z=16.000003814697266
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://94925418425495
+TextureId: null

@@ -1,0 +1,10 @@
+Name: Cube
+ClassName: MeshPart
+Position: X=266.6046447753906, Y=52.65898132324219, Z=-1355.3250732421875
+Size: X=6.055355548858643, Y=22.455472946166992, Z=46.59606170654297
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://128053198215319
+TextureId: null

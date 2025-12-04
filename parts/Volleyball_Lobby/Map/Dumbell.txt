@@ -1,0 +1,10 @@
+Name: Dumbell
+ClassName: MeshPart
+Position: X=290.5640563964844, Y=42.23830795288086, Z=-1267.47607421875
+Size: X=1.6132776737213135, Y=1.6132776737213135, Z=2.731618642807007
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://139582196940057
+TextureId: null

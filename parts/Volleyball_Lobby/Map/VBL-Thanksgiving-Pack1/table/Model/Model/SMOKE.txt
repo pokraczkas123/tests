@@ -1,0 +1,8 @@
+Name: SMOKE
+ClassName: Part
+Position: X=302.3111877441406, Y=46.60429382324219, Z=-1207.09521484375
+Size: X=0.8201106786727905, Y=0.8201106786727905, Z=0.8201106786727905
+Color: R=0, G=255, B=0
+Transparency: 1
+Anchored: false
+CanCollide: true

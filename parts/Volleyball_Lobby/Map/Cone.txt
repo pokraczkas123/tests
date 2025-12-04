@@ -1,0 +1,10 @@
+Name: Cone
+ClassName: MeshPart
+Position: X=360.4674377441406, Y=42.56686019897461, Z=-1341.2989501953125
+Size: X=2.0107171535491943, Y=2.2694404125213623, Z=2.0107171535491943
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://129443422635743
+TextureId: null

@@ -1,0 +1,8 @@
+Name: Court_Area21
+ClassName: Part
+Position: X=0.16968047618865967, Y=6.032020092010498, Z=40.31137466430664
+Size: X=110.68001556396484, Y=31.69000244140625, Z=81.57890319824219
+Color: R=165, G=71, B=71
+Transparency: 1
+Anchored: false
+CanCollide: false

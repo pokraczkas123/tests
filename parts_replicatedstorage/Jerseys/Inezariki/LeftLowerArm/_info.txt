@@ -1,0 +1,11 @@
+Name: LeftLowerArm
+ClassName: MeshPart
+Position: X=105.70476531982422, Y=2.779388904571533, Z=39.137577056884766
+Size: X=1, Y=1.0518989562988281, Z=1
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=74
+TextureId: null

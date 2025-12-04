@@ -1,0 +1,10 @@
+Name: LockersRecolor.003
+ClassName: MeshPart
+Position: X=284.8915710449219, Y=45.893184661865234, Z=-1221.158935546875
+Size: X=2.319300889968872, Y=9.060053825378418, Z=2.3586392402648926
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://95353516469918
+TextureId: null

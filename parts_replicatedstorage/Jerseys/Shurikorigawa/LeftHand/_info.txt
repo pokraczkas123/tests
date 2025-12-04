@@ -1,0 +1,11 @@
+Name: LeftHand
+ClassName: MeshPart
+Position: X=115.5, Y=2.153414249420166, Z=38.49945068359375
+Size: X=1, Y=0.30010032653808594, Z=1
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: false
+Material: null
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430070991
+TextureId: null

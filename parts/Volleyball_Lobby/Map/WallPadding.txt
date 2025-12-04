@@ -1,0 +1,10 @@
+Name: WallPadding
+ClassName: MeshPart
+Position: X=283.9283142089844, Y=47.46926498413086, Z=-1249.2532958984375
+Size: X=0.7652687430381775, Y=10.907785415649414, Z=6.356729984283447
+Color: R=233, G=101, B=57
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://126643002261516
+TextureId: null

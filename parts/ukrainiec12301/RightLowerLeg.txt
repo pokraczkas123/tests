@@ -1,0 +1,10 @@
+Name: RightLowerLeg
+ClassName: MeshPart
+Position: X=0.5115628838539124, Y=-4.012365818023682, Z=-33.07622146606445
+Size: X=1, Y=1.1930999755859375, Z=1
+Color: R=110, G=153, B=202
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: https://assetdelivery.roblox.com/v1/asset/?id=7430071105
+TextureId: null

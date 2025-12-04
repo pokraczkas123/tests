@@ -1,0 +1,8 @@
+Name: Camera
+ClassName: Part
+Position: X=-0.16192907094955444, Y=29.0301513671875, Z=-0.01816648244857788
+Size: X=1.000000238418579, Y=1.000000238418579, Z=1.000000238418579
+Color: R=163, G=162, B=165
+Transparency: 1
+Anchored: false
+CanCollide: false

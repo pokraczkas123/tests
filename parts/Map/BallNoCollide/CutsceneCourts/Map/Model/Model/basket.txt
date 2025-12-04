@@ -1,0 +1,10 @@
+Name: basket
+ClassName: MeshPart
+Position: X=-43.43273162841797, Y=-2.6117935180664062, Z=45.052433013916016
+Size: X=5.3642144203186035, Y=4.852676868438721, Z=5.364214897155762
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://124163841772929
+TextureId: null

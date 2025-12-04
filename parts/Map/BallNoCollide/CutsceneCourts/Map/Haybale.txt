@@ -1,0 +1,10 @@
+Name: Haybale
+ClassName: MeshPart
+Position: X=52.0912971496582, Y=-3.228426933288574, Z=-77.40839385986328
+Size: X=7.493154048919678, Y=3.5313589572906494, Z=4.886689186096191
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://71600735284871
+TextureId: null

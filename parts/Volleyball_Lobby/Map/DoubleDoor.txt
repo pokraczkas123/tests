@@ -1,0 +1,10 @@
+Name: DoubleDoor
+ClassName: MeshPart
+Position: X=303.5053405761719, Y=104.6817398071289, Z=-1448.199951171875
+Size: X=2.250000476837158, Y=11.000001907348633, Z=13.25000286102295
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://88855193919853
+TextureId: null

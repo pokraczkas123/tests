@@ -1,0 +1,10 @@
+Name: Ceiling
+ClassName: MeshPart
+Position: X=277.1860046386719, Y=120.4329605102539, Z=-1355.324951171875
+Size: X=222.0000457763672, Y=22.495004653930664, Z=134.00001525878906
+Color: R=156, G=156, B=156
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://114985272415589
+TextureId: null

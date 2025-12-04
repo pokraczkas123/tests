@@ -1,0 +1,10 @@
+Name: Curtain
+ClassName: MeshPart
+Position: X=342.7657165527344, Y=86.68270874023438, Z=-1390.651611328125
+Size: X=1.1271013021469116, Y=13.77783489227295, Z=23.441692352294922
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://103203590005752
+TextureId: null

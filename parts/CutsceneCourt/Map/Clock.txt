@@ -1,0 +1,8 @@
+Name: Clock
+ClassName: Part
+Position: X=-223.5497589111328, Y=36.504329681396484, Z=-1304.9000244140625
+Size: X=1, Y=5, Z=5
+Color: R=236, G=234, B=239
+Transparency: 0
+Anchored: false
+CanCollide: true

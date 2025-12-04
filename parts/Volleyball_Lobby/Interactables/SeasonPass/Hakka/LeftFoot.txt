@@ -1,0 +1,10 @@
+Name: LeftFoot
+ClassName: MeshPart
+Position: X=279.90338134765625, Y=41.78134536743164, Z=-1381.1068115234375
+Size: X=0.9801444411277771, Y=0.3000001907348633, Z=0.9801444411277771
+Color: R=234, G=184, B=146
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: http://www.roblox.com/asset/?id=1699715602
+TextureId: null

@@ -1,0 +1,10 @@
+Name: Floor.001
+ClassName: MeshPart
+Position: X=404.4391174316406, Y=40.85401916503906, Z=-1355.4486083984375
+Size: X=95.7480239868164, Y=0.6026345491409302, Z=95.7480239868164
+Color: R=83, G=147, B=170
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://92978160926702
+TextureId: null

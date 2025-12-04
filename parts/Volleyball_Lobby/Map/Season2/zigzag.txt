@@ -1,0 +1,8 @@
+Name: zigzag
+ClassName: Part
+Position: X=263.4364929199219, Y=59.43215560913086, Z=-1355.324951171875
+Size: X=0.0010000001639127731, Y=10.000001907348633, Z=68.00000762939453
+Color: R=237, G=234, B=234
+Transparency: 1
+Anchored: false
+CanCollide: false

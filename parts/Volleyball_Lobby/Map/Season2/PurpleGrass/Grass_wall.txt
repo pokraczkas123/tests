@@ -1,0 +1,8 @@
+Name: Grass wall
+ClassName: Part
+Position: X=333.9360046386719, Y=59.932159423828125, Z=-1395.324462890625
+Size: X=0.0010000001639127731, Y=15.000003814697266, Z=19.000003814697266
+Color: R=237, G=234, B=234
+Transparency: 1
+Anchored: false
+CanCollide: false

@@ -1,0 +1,10 @@
+Name: Window.001
+ClassName: MeshPart
+Position: X=42.100440979003906, Y=5.037689208984375, Z=-84.2406997680664
+Size: X=0.001463031629100442, Y=10.040532112121582, Z=8.036999702453613
+Color: R=128, G=151, B=255
+Transparency: 0.25
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://119472334635797
+TextureId: null

@@ -1,0 +1,10 @@
+Name: neonlight
+ClassName: MeshPart
+Position: X=303.1415710449219, Y=70.35981750488281, Z=-1520.02587890625
+Size: X=1.198495864868164, Y=0.4313955008983612, Z=14.941279411315918
+Color: R=130, G=148, B=192
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://78668858404907
+TextureId: null

@@ -1,0 +1,10 @@
+Name: Door
+ClassName: MeshPart
+Position: X=-273.04998779296875, Y=23.260345458984375, Z=-1304.220458984375
+Size: X=1.7174110412597656, Y=10.52125358581543, Z=7.226348400115967
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://137645516604919
+TextureId: null

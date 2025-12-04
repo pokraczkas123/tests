@@ -1,0 +1,10 @@
+Name: Side
+ClassName: MeshPart
+Position: X=0, Y=0, Z=0
+Size: X=1.1075184345245361, Y=9.627646446228027, Z=59.96001434326172
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: false
+MeshId: rbxassetid://83694892028408
+TextureId: null

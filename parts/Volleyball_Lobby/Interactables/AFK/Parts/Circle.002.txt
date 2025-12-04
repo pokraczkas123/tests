@@ -1,0 +1,10 @@
+Name: Circle.002
+ClassName: MeshPart
+Position: X=333.7415771484375, Y=43.03364562988281, Z=-1325.1365966796875
+Size: X=4.435873508453369, Y=0.5282115936279297, Z=8.828506469726562
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://85455846082440
+TextureId: null

@@ -1,0 +1,10 @@
+Name: Plane
+ClassName: MeshPart
+Position: X=-222.9250030517578, Y=20.388648986816406, Z=-1284.04833984375
+Size: X=3.2463009357452393, Y=27.27783203125, Z=70.02631378173828
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true
+MeshId: rbxassetid://85170066104020
+TextureId: null

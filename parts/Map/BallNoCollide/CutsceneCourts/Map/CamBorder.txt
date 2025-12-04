@@ -1,0 +1,8 @@
+Name: CamBorder
+ClassName: Part
+Position: X=-55.61698913574219, Y=17.314289093017578, Z=-5.412256240844727
+Size: X=0.5000001192092896, Y=35.50000762939453, Z=173.5000457763672
+Color: R=163, G=162, B=165
+Transparency: 0
+Anchored: false
+CanCollide: true

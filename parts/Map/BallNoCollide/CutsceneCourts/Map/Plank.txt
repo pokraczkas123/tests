@@ -1,0 +1,8 @@
+Name: Plank
+ClassName: Part
+Position: X=54.7502555847168, Y=38.1912956237793, Z=-3.000025749206543
+Size: X=0.5000001192092896, Y=3.0000007152557373, Z=174.0000457763672
+Color: R=88, G=65, B=47
+Transparency: 0
+Anchored: false
+CanCollide: true

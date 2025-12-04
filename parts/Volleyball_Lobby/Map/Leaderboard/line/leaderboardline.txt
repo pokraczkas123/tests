@@ -1,0 +1,8 @@
+Name: leaderboardline
+ClassName: Part
+Position: X=373.1739807128906, Y=41.432640075683594, Z=-1355.4447021484375
+Size: X=0.506169855594635, Y=0.0010123398387804627, Z=12.500168800354004
+Color: R=225, G=222, B=222
+Transparency: 0
+Anchored: false
+CanCollide: true

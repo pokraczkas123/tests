@@ -1,0 +1,8 @@
+Name: WallLining
+ClassName: Part
+Position: X=54.750247955322266, Y=-1.0590152740478516, Z=-28.287105560302734
+Size: X=0.5000001192092896, Y=0.5000001192092896, Z=112.92622375488281
+Color: R=108, G=88, B=75
+Transparency: 0
+Anchored: false
+CanCollide: true
